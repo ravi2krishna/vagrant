@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo "Starting Provison: LOAD BALANCER"
+sudo apt-get update -y 
 sudo apt-get -y install nginx
 sudo service nginx stop
 sudo rm -rf /etc/nginx/sites-enabled/default
